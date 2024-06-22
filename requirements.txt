@@ -1,0 +1,14 @@
+scikit-learn==1.4.2
+pandas==2.2.2
+numpy==1.26.4
+scipy==1.13.0 
+matplotlib==3.8.4 
+seaborn==0.13.2 
+yellowbrick==1.5
+torch==2.3.0
+skorch==0.15.0
+jupyterlab==4.2.0
+imbalanced-learn==0.12.2
+mlrose-hiive
+joblib==1.2.0
+networkx==3.3
