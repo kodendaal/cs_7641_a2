@@ -33,12 +33,18 @@ The Neural Network Random Optimization evaluation file is contained in a jupyter
 
 Helper evaluation functions are contained in a python file: ```utils.py```.
 
+
+Output Directory:
+----
+
+Currently, many files are too large to be pushed to the repository (>100MB). Thus, directory of previous computations will not be included in GitHub repo included seperately in the submission. 
+
 ----
 The general running structure is as follows;
 RO 2-problem:
 1. Select problem you would like to evaluate and load in selection cell. 
+    * perform new_evaluations (1st)
     * Indicate whether you would like to load in previous pickle files in outputdir folder, or;
-    * perform new_evaluations
 
 For each optimizer (Random Hill, Simulated Annealing, and Genetic Algorithm);
 2. Peform preliminary multi-seeded evaluations with varying hyper-parameters. Manually set parameter ranges fo interest. 
@@ -48,8 +54,8 @@ For each optimizer (Random Hill, Simulated Annealing, and Genetic Algorithm);
 
 RO Neural Network:
 1. Select dataset you would like to evaluate and load in selection cell. 
+    * Perform new gridsearch evaluations (1st)
     * Indicate whether you would like to load in previous pickle files in outputdir folder, or;
-    * Perform new gridsearch evaluations, or;
     * Plot the evaluated Loss curves, or;
     * Plot the evalauted Learning curves
 2. Load and split data into training and testing set. (Perform data standardization)
